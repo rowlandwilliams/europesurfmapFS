@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+html, body, #mapid {
+    height: 100%;
+    width: 100%;
+}
+
+.voronoi {
+    fill: none;
+    opacity: 1;
+    stroke: white;
+    
+}
+
+.leaflet-overlay-pane svg path{
+    pointer-events: all;
+    cursor: pointer;
+    stroke-width: 0.1;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 150px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+
+}
+
+.countryBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.box {
+    width: 1em;
+    height: 1em;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+#about {
+    position: relative; 
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+@media only screen and (max-width:485px) {
+    #about {
+        bottom: 30px;
+    }
+}
+
+.aboutText {
+    background: rgba(255,255,255,0.8);
+    border-radius: 2px;
+    padding: 0px 4px 0px 4px;
+}
+
+#aboutDesc {
+    position: absolute;
+    visibility: hidden;
+    width: 200px;
+    bottom: 0;
+    padding: 4px;
+}
+
+#about:hover #aboutHeader {
+    visibility: hidden;
+}
+
+#about:hover #aboutDesc {
+    visibility: visible;
+}
