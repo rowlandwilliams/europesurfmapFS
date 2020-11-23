@@ -23,9 +23,5 @@ app.get('/getAll', (request, response) => {
 
 })
 
-// update
-
-// delete
-
 app.listen(process.env.PORT, () => console.log('app is running'));
 
