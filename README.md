@@ -1,8 +1,8 @@
 European Wave Atlas (full-stack version) deployed on Heroku.
 
-(europesurfmap.herokuapp.com)[https://europesurfmap.herokuapp.com/]
+[europesurfmap.herokuapp.com](https://europesurfmap.herokuapp.com/)
 
-Interactive map of European surf spots using data scraped from (Magicseaweed) [https://magicseaweed.com/Jersey-Surf-Report/120/]. The map employs a voronoi tesselation to work out the nearest surf spot to any location hovered over in Europe.
+Interactive map of European surf spots using data scraped from [Magicseaweed] (https://magicseaweed.com/Jersey-Surf-Report/120/). The map employs a voronoi tesselation to work out the nearest surf spot to any location hovered over in Europe.
 
 Stack used:
 
@@ -17,4 +17,4 @@ Notes from the deployment process:
      + I then added code to app.js to serve client files from the node app.
      
 - Whilst deploying I had issues with MySQL database connections closing after being idle for a few minutes. 
-     + To overcome this, I added connection (pools)[https://github.com/mysqljs/mysql#pool-events] in the database connection code.
+     + To overcome this, I added connection [pools](https://github.com/mysqljs/mysql#pool-events) in the database connection code.
